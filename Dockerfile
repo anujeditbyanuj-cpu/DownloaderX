@@ -14,8 +14,7 @@ COPY requirements.txt .
 
 # Install Python packages
 RUN pip install --no-cache-dir --upgrade pip && \
-    pip install --no-cache-dir -r requirements.txt && \
-    pip install --no-cache-dir -U yt-dlp
+    pip install --no-cache-dir -r requirements.txt
 
 # Copy project files
 COPY . .
